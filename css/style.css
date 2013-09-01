@@ -1,0 +1,212 @@
+/**
+ * Parallax Scrolling Tutorial
+ * For NetTuts+
+ *  
+ * Author: Mohiuddin Parekh
+ *	http://www.mohi.me
+ * 	@mohiuddinparekh   
+ */
+
+body {
+	margin:0;
+	padding:0;
+    font-family: 'Lato', sans-serif;
+}
+#links .span4 {
+    background:rgba(30,30,30,1);
+    opacity:0.7;
+    border-radius:50%;
+    -webkit-transition: all 0.1s ease-in-out;
+-moz-transition: all 0.1s ease-in-out;
+-ms-transition: all 0.1s ease-in-out;
+-o-transition: all 0.1s ease-in-out;
+transition: all 0.1s ease-in-out;
+    height:150px;
+    width:150px;
+    padding:12px;
+    margin-left:50px;
+    margin-right:50px;
+}
+#links .row {
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    width:850px;
+}
+#links img {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    opacity:inherit;
+    
+}
+#links hr {
+    border-top:none;
+    opacity:0.5;
+}
+#links {
+    text-align:center;
+}
+#links img {
+    width:150px;
+}
+#links {
+    font-size:14px;
+    color:#fff;
+    text-shadow: 3px 3px 14px rgba(0,0,0,0.4);
+    padding-left:-75px;
+    padding-right:-75px;
+
+}
+#links a:active {
+    color:#fff;
+}
+#links .span4:hover {
+    color:#fff;
+    text-decoration:none;
+    opacity:0.95;
+     background:rgba(0,0,0,0.5);
+    
+}
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight:700;
+}
+.title {
+   text-align:center;
+}
+.title h1 {
+    font-size:90px;
+    color:#fff;
+    text-shadow: 3px 3px 14px rgba(0,0,0,0.5);
+    margin-top:25px;
+}
+
+.title h2 {
+    font-size:40px;
+     color:rgba(255, 255, 255, 0.95);
+    text-shadow: 3px 3px 14px rgba(0,0,0,0.2);
+}
+#navbar {
+    z-index:9000;
+    margin-bottom:0;
+    position:fixed;   
+    width:100%;
+}
+#navbar .navbar-inner {
+    background-color:rgba(0,0,0,0.79);
+     color:rgba(255, 255, 255, 0.6);
+    border:0;
+}
+#navbar .active {
+    background-color:none;
+    color:white;
+    
+}
+
+.content {
+    position:absolute;
+    z-index:1;
+
+}
+#home .content {
+    top:850px;
+}
+#home {
+    height:900px;
+}
+#dedicated .content {
+    top:1500px;
+}
+#teachers .content {
+    top:1950px;
+}
+#skills .content {
+    top:2150px;
+}
+section {
+    background-size: cover;
+    /*box-shadow: inset 0px 0px 200px 0px rgba(0,0,0,0.5);*/
+    height:700px;
+    margin-top:-100px;
+	margin: 0 auto; 
+    width: 100%; 
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+#home { 
+	background: url("http://static.tumblr.com/9f21dfc8c294421a7e5028b52f531b07/eo78ltx/1eDmsdinj/tumblr_static_175921_559729230710393_111616407_o.jpg") no-repeat fixed; 
+    background-size: cover;
+   
+    
+}
+
+
+#dedicated { 
+	background: url(../images/dedicated.jpg) no-repeat fixed; 
+    background-size: cover;
+}
+#skills { 
+	background: url(../images/skills.jpg) no-repeat fixed; 
+    background-size: cover;
+}
+.white {
+     background:rgba(255,255,255,0.97);
+    box-shadow: 2px 1px 25px rgba(0,0,0,0.25);
+    padding-bottom:22px;
+    
+}
+.white h2 {
+    padding-top:15px;
+    text-align:left;
+}    
+.fat {
+    z-index:1000;
+    color:black;
+    width:100%;
+    margin-bottom:75px;
+}
+/* Introduction */
+
+article { height: 458px; position: absolute; width: 100%; }
+
+
+.arrow_box {
+	position: relative;    
+    background: #fff;
+}
+.arrow_box:after, .arrow_box:before {
+    margin-top:25px;
+	top: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+    opacity:0.9;
+    
+}
+
+.arrow_box:after {
+	border-color: rgba(214, 214, 214, 0);
+	border-top-color: #fff;
+	border-width: 20px;
+	left: 50%;
+	margin-left: -25px;
+    border-radius:5px;
+    opacity:0.9;
+    
+}
+.arrow_box:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-top-color: none;
+	border-width: 25px;
+	left: 50%;
+	margin-left: -31px;
+    opacity:0.9;
+}
+
+
