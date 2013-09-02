@@ -1,10 +1,16 @@
 $(document).ready(function(){
-    var offset = 200;
+    var offset = 220;
 
 $('.navbar li a').click(function(event) {
     event.preventDefault();
-    $($(this).attr('href'))[0].scrollIntoView();
-    scrollBy(0, -offset);
+   //$($(this).attr('href'))[0].scrollIntoView();
+    //scrollBy(0, -offset);
+    //alert(offset);
+    $('html, body').animate({ scrollTop: $(this.hash).offset().top - offset }, 400);
+   // window.location.hash = $(this).hash;
+    window.location.hash = $(this).attr('href')
+    return true;
+
 });
     
 	// Cache the Window object

@@ -53,7 +53,7 @@ transition: all 0.1s ease-in-out;
 #links {
     font-size:14px;
     color:#fff;
-    text-shadow: 3px 3px 14px rgba(0,0,0,0.4);
+    /*text-shadow: 3px 3px 14px rgba(0,0,0,0.4);*/
     padding-left:-75px;
     padding-right:-75px;
 
@@ -78,14 +78,14 @@ h1 {
 .title h1 {
     font-size:90px;
     color:#fff;
-    /*text-shadow: 3px 3px 14px rgba(0,0,0,0.5);*/
+    text-shadow: 1px 3px 14px rgba(0,0,0,0.5);
     margin-top:25px;
 }
 
 .title h2 {
     font-size:40px;
      color:rgba(255, 255, 255, 0.95);
-    /*text-shadow: 3px 3px 14px rgba(0,0,0,0.2);*/
+    text-shadow: 1px 3px 14px rgba(0,0,0,0.2);
 }
 #navbar {
     z-index:9000;
