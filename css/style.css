@@ -109,15 +109,14 @@ h1 {
     z-index:1;
 
 }
-#home .content {
+#about {
     top:850px;
 }
-#home {
-    height:900px;
-}
-#dedicated .content {
+
+#dedicated {
     top:1500px;
 }
+
 #teachers .content {
     top:1950px;
 }
@@ -136,17 +135,16 @@ section {
        -o-background-size: cover;
           background-size: cover;
 }
-#home { 
+#about-container { 
+    height:900px;
 	background: url("http://static.tumblr.com/9f21dfc8c294421a7e5028b52f531b07/eo78ltx/1eDmsdinj/tumblr_static_175921_559729230710393_111616407_o.jpg") no-repeat fixed; 
-    background-size: cover;
-   
-    
+    background-size: cover;    
 }
 
-
-#dedicated { 
+#dedicated-container { 
 	background: url(../images/dedicated.jpg) no-repeat fixed; 
     background-size: cover;
+    height:700px;
 }
 #skills { 
 	background: url(../images/skills.jpg) no-repeat fixed; 
@@ -158,6 +156,10 @@ section {
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);*/
     padding-bottom:22px;
+    
+}
+article .bro {
+    padding-top:400px;
     
 }
 .white h2 {
@@ -173,7 +175,6 @@ box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);*/
 /* Introduction */
 
 article { height: 458px; position: absolute; width: 100%; }
-
 
 .arrow_box {
 	position: relative;    
