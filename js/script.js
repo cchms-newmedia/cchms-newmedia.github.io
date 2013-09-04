@@ -2,14 +2,16 @@ $(document).ready(function(){
     var offset = 220;
 
 $('.navbar li a').click(function(event) {
+    //window.location.hash = $(this).attr('href')
     event.preventDefault();
    //$($(this).attr('href'))[0].scrollIntoView();
     //scrollBy(0, -offset);
-    //alert(offset);
-    $('html, body').animate({ scrollTop: $(this.hash).offset().top - offset }, 400);
+    //alert($(this.hash).offset().top);
+     var target = $(this).attr('href');
+    //$('html, body').animate({ scrollTop: $(target).offset().top - offset }, 700);
    // window.location.hash = $(this).hash;
-    window.location.hash = $(this).attr('href')
-    return true;
+    
+    return false;
 
 });
     
@@ -33,7 +35,7 @@ $('.navbar li a').click(function(event) {
             return;
         }
 		// Move the background
-		$bgobj.css({ backgroundPosition: coords });
+		//$bgobj.css({ backgroundPosition: coords });
     //$bgobj.animate({backgroundPosition:coords},{queue:false, duration:500});
 
 }); // window scroll Ends
